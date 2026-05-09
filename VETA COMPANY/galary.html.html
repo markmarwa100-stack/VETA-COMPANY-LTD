@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Gallery | VETA COMPANY LTD</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#bfc8d0",
+                    "surface-container-low": "#1c1b1b",
+                    "on-primary-container": "#00285b",
+                    "on-secondary-fixed": "#141d23",
+                    "on-primary-fixed-variant": "#004493",
+                    "surface-tint": "#adc7ff",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary": "#bfc8d0",
+                    "on-secondary": "#293138",
+                    "primary": "#adc7ff",
+                    "on-surface-variant": "#c1c6d7",
+                    "outline-variant": "#414754",
+                    "secondary-fixed": "#dbe4ed",
+                    "surface-variant": "#353534",
+                    "inverse-primary": "#005bc0",
+                    "on-tertiary-fixed-variant": "#004e5e",
+                    "on-primary": "#002e68",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-container": "#009ebd",
+                    "outline": "#8b90a0",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-fixed-dim": "#33d7fe",
+                    "on-secondary-fixed-variant": "#3f484f",
+                    "on-primary-fixed": "#001a41",
+                    "background": "#131313",
+                    "primary-container": "#4a8eff",
+                    "on-tertiary-fixed": "#001f27",
+                    "on-secondary-container": "#b0b9c2",
+                    "on-tertiary": "#003642",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#b1ecff",
+                    "surface-dim": "#131313",
+                    "surface-container-highest": "#353534",
+                    "error-container": "#93000a",
+                    "primary-fixed-dim": "#adc7ff",
+                    "on-surface": "#e5e2e1",
+                    "primary-fixed": "#d8e2ff",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-container": "#414a52",
+                    "on-background": "#e5e2e1",
+                    "on-tertiary-container": "#002e39",
+                    "surface": "#131313",
+                    "error": "#ffb4ab",
+                    "tertiary": "#33d7fe",
+                    "inverse-surface": "#e5e2e1",
+                    "surface-container": "#201f1f",
+                    "surface-bright": "#393939"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-sm": "0.5rem",
+                    "margin-mobile": "1rem",
+                    "base": "8px",
+                    "gutter": "1.5rem",
+                    "stack-lg": "2rem",
+                    "stack-md": "1rem",
+                    "margin-desktop": "2rem"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Space Grotesk"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Space Grotesk"],
+                    "display-lg": ["Space Grotesk"],
+                    "label-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-effect { backdrop-filter: blur(10px); background: rgba(19, 19, 19, 0.8); }
+        .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full bg-surface/90 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-[1320px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-primary">VETA COMPANY LTD</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Services</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-body-md text-body-md" href="#">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Insights</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:scale-95 transition-all duration-150 ease-in-out">Consultation</button>
+</div>
+</div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-20 md:py-32 border-b border-outline-variant">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<span class="text-primary font-label-md text-label-md tracking-widest uppercase mb-4 block">Engineered Excellence</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">Our Portfolio</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Explore our engineering and technology milestones. We deliver structural integrity and high-performance solutions for the modern digital landscape.</p>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+<svg fill="none" viewbox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H400V400H0V0Z" fill="url(#grid-pattern)"></path>
+<defs>
+<pattern height="40" id="grid-pattern" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#adc7ff" stroke-width="0.5"></path>
+</pattern>
+</defs>
+</svg>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="sticky top-[73px] z-40 bg-background/80 backdrop-blur-md border-b border-outline-variant">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop py-4 overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-4 min-w-max">
+<button class="bg-primary text-on-primary px-5 py-2 rounded-full font-label-md text-label-md transition-all">All Projects</button>
+<button class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary px-5 py-2 rounded-full font-label-md text-label-md transition-all">Web Dev</button>
+<button class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary px-5 py-2 rounded-full font-label-md text-label-md transition-all">Cybersecurity</button>
+<button class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary px-5 py-2 rounded-full font-label-md text-label-md transition-all">Infrastructure</button>
+<button class="border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary px-5 py-2 rounded-full font-label-md text-label-md transition-all">Cloud</button>
+</div>
+</div>
+</section>
+<!-- Gallery Grid (Bento Style) -->
+<section class="py-12 md:py-24 container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Project Card 1: Large Featured -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low border border-outline-variant rounded-xl transition-all hover:border-primary">
+<div class="aspect-[16/9] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, high-angle shot of a massive, glowing data center aisle with blue led lights pulsing through server racks. The image is clean and futuristic, emphasizing industrial scale and high-tech engineering. The color palette is dominated by deep blacks and vibrant electric blue highlights, consistent with a secure enterprise environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzGPNX8hLodb07z5qPOGkvxbUFvqfcpnyR23ngMtLJrJuZEhHpmwLAUhC8mU2yZH4iO8Y-1noUySRqUagBtepG0OjKU_vWEfG6c_rOLFh9BXFnekIJqlT0C-L6EOyDU7xmuPTmkpguvyEEk2PjE9sbCPKR-7lHP-NhVly_8Y2xrCdxWImxwa8C819wNOfHAoTKlmHX-_HJYEddEA-KeXf-OR5Nj0HtTd6S1I7x-Vv_co-2wCcEijHNefFK0nGQT5TKg2yFbKivJFPq"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-primary bg-primary/10 px-3 py-1 rounded text-xs font-label-md">CLOUD INFRASTRUCTURE</span>
+<span class="text-on-surface-variant text-xs font-label-md">2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Enterprise Cloud Migration</h3>
+<p class="text-on-surface-variant mb-6 line-clamp-2">A comprehensive transition of legacy systems to a highly scalable, distributed cloud architecture for a global logistics leader. Optimized for 99.99% uptime and zero-latency data processing.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-md hover:gap-4 transition-all" href="#">
+                            VIEW CASE STUDY <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2: National Data Center -->
+<div class="md:col-span-4 group relative flex flex-col bg-surface-container-low border border-outline-variant rounded-xl transition-all hover:border-primary">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up view of intricate biometric security scanners and encrypted server interfaces in a high-security facility. The lighting is low and atmospheric with sharp blue focus points on digital touchpads. The aesthetic is extremely professional, highlighting cybersecurity and technological integrity through structural details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7-wuG1kmVpjBOYIRgryN-ptcq2gqlPouCVS_C1BH7ohYNqvs7PXCTwAQUJmBqX5dTI5Q72oAaVeo_qY1G0ImuC4nu_2nZIVMrsInL8u-wqa863c3Ae11RWb8sAq4cRc_1eSY3cPOH8w_ErZZlH1die6dtkKbXnkJ1fqmynP66XC_SRgQfDHhiiLoxVxOiLt4iAo3yI1CI8O4rcuH2kn8WXumDTMQaUPWSpqjNElltyo8m4rTk3AmZLOGa2Ot22Qlm7X0WcLl2X6wi"/>
+</div>
+<div class="p-6 flex-grow">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-tertiary bg-tertiary/10 px-3 py-1 rounded text-xs font-label-md">CYBERSECURITY</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">National Data Center Security</h3>
+<p class="text-on-surface-variant text-sm font-body-sm mb-6">Implementing multi-layer defensive protocols and biometric authentication systems for sovereign data integrity.</p>
+<a class="mt-auto inline-flex items-center gap-2 text-primary font-label-md hover:gap-4 transition-all" href="#">
+                            VIEW DETAILS <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 3: E-commerce -->
+<div class="md:col-span-4 group relative flex flex-col bg-surface-container-low border border-outline-variant rounded-xl transition-all hover:border-primary">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek, high-tech representation of a global e-commerce network with glowing lines connecting digital storefront icons across a dark world map. The visual style is abstract yet technical, using high-contrast blues and blacks to signify connectivity and scalability in a corporate tech context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjAJFg5gRJcbj8zCNgRwi9WoNqOCXmF5RFdIZIFJ8e4dAotLCjKZCkD48A8XS_xU1Dlntgb59W8EXJ0JLMXD93QvwgCsyFBT-kSdN505GK5K4hRCP2YFdLgAEU91iqzrx2PTCbIZzgPmStS9tJ1NmkLRm0X0TOv2yKqVNq2w9XC8vw1BnZviluiIvfLHxl8tInBELBE0WK5qdH_6lMW-KBh0uuK9syD6IolmFGMa0-FcTG19vCUpLZoJV2KOeGpXE4y3bZFRJiMHQb"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-primary bg-primary/10 px-3 py-1 rounded text-xs font-label-md">WEB DEVELOPMENT</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Scalable E-commerce Architecture</h3>
+<p class="text-on-surface-variant text-sm font-body-sm">A headless commerce solution handling 1M+ monthly sessions with AI-driven personalization engines.</p>
+</div>
+</div>
+<!-- Project Card 4: Network Infrastructure -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low border border-outline-variant rounded-xl transition-all hover:border-primary">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 aspect-video md:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An artistic view of complex fiber optic cables glowing with blue light in a dark underground vault. The focus is sharp on the intricate cabling, representing structural precision and high-performance network engineering. The mood is secure and technologically advanced with a dark-mode palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4I2t8e3KXxsnWrGxUnI-4toG6GeBLQXgDGHx_vy9UsvUEi6BgzRG87apU_7X6MipHIllw9H9u0plZaWLxWDf7OyOwle2_oQ8DiuNq0ztXwxUse5wwgcoz4yxEihUMEC3o-aFY3H2n-00OuO2dEcdAV5RDtY3AR33ZArLHja69e_KjunAzcpxdB4_Lq82oCNX1UUzRxMgZEGhYtTByvm6sbefAiqdLVab0d_ciRZjNiPhC9oRfJqdbuJbGJ0hlZXPX3mF_PZ7m8o4Q"/>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-secondary bg-secondary/10 px-3 py-1 rounded text-xs font-label-md">INFRASTRUCTURE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Fiber-Optic Backbone Deployment</h3>
+<p class="text-on-surface-variant mb-6">Critical infrastructure project connecting industrial zones with high-speed, redundant fiber-optic rings.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-md hover:gap-4 transition-all" href="#">
+                                TECHNICAL SPECS <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 5: AI Systems -->
+<div class="md:col-span-6 group relative bg-surface-container-low border border-outline-variant rounded-xl transition-all hover:border-primary overflow-hidden">
+<div class="p-8 h-full flex flex-col">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">memory</span>
+<h3 class="font-headline-md text-headline-md mb-2">Advanced Predictive Maintenance</h3>
+<p class="text-on-surface-variant mb-8">AI-driven monitoring for industrial turbines, reducing downtime by 40% through predictive analytics.</p>
+<div class="mt-auto">
+<img class="w-full h-48 object-cover rounded-lg" data-alt="A sophisticated digital visualization of neural network pathways glowing in electric blue over a schematic of industrial machinery. The imagery represents the fusion of artificial intelligence and traditional engineering, maintaining a high-fidelity and professional tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM8OVNiU3mZ4TusbqymhuQuJwspcZBr7bkufcSucGOHbbrLfO19GcGD7EXzWU06nf4HCaYfptOnKaUHGM_2CsULt4-mRR6bjrFORoWnlpi6q9W3hWXWy9MmeTceO7ba9j5gEvI2XaZ-OmH28XmA5e1vMTvqxgUwDB7w9QQB8Jgz1MxY0dg7D8q90ykdLimY20ogiJoEZFLHWP2tGlVDVf2oAbx_FoBa9ASKwvr-CdP8vtqJnNA0P8VcpMME9HBEgGM0sseDHGrvg2G"/>
+</div>
+</div>
+</div>
+<!-- Project Card 6: Smart City -->
+<div class="md:col-span-6 group relative bg-surface-container-low border border-outline-variant rounded-xl transition-all hover:border-primary overflow-hidden">
+<div class="p-8 h-full flex flex-col">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6">location_city</span>
+<h3 class="font-headline-md text-headline-md mb-2">Smart City IoT Integration</h3>
+<p class="text-on-surface-variant mb-8">Urban-scale sensor network for traffic optimization and environmental monitoring across metropolitan districts.</p>
+<div class="mt-auto">
+<img class="w-full h-48 object-cover rounded-lg" data-alt="A night view of a futuristic city skyline with digital light overlays representing data flow between buildings and streets. The visual style is premium and cinematic, utilizing a dark-ui theme with cyan and blue data streams highlighting the concept of a connected smart city." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1aQTNUGsMHKKyI4KYFaRPzQw1_GJj_8B5y-3MUZkEjcIqwJrdy2_qXTjdgQL0maPVrOPO9qfMq9YlXVnv5MSax_K41QyS76Xgru-6uzpRTTY3Nib-PLx-I9QgyJ2CUmYcLG8iYVxDqWnwNlrOJooIwt5iNijmMV61zmFjuWHmJw3BK9j8Dyl3D6RkOWH9YZ9D64-JQg3ksZyCmEu2rD1lSXLa0lyflWFDWhXt3RQfqGTjE4ovoEOKxghtED3xjLqfqabit7UG9UcI"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-surface-container-lowest border-y border-outline-variant">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg mb-8">Ready to Build Your Next Milestone?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">Our engineering teams are ready to tackle your most complex technological challenges with precision and integrity.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:scale-95 transition-all">START A PROJECT</button>
+<button class="border border-outline-variant text-on-surface px-10 py-4 rounded-lg font-label-md text-label-md hover:border-primary hover:text-primary transition-all">DOWNLOAD PORTFOLIO PDF</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-margin-mobile md:px-margin-desktop py-12 max-w-[1320px] mx-auto">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-4">VETA COMPANY LTD</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm max-w-md">Engineering precision and technological integrity. We design and implement the systems that power the future.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-3">
+<h4 class="text-on-surface font-label-md text-label-md mb-2">PRACTICES</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Web Dev</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Cybersecurity</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Infrastructure</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Cloud</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-on-surface font-label-md text-label-md mb-2">LEGAL</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Security Standards</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">Infrastructure Status</a>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant px-margin-mobile md:px-margin-desktop py-6 max-w-[1320px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-on-surface-variant font-body-sm text-body-sm">© 2024 VETA COMPANY LTD. ENGINEERING PRECISION &amp; TECHNOLOGICAL INTEGRITY.</span>
+<div class="flex gap-6">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all" href="#">terminal</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all" href="#">database</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-all" href="#">shield</a>
+</div>
+</div>
+</footer>
+</body></html>
